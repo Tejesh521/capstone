@@ -8,10 +8,10 @@ Main goal of this project is to look at traffic data by working with log files. 
 
 ## contents 
 - **Sound Analysis**:
-  - i compare how loud the sound is (in dBFS) with actual sound file loudness. This is important because if they don’t match, there might be a problem with the sound. i need to check if sound files are good quality.
+  - i compare how loud the sound is with actual sound file loudness. This is important because if they don’t match, there might be a problem with the sound. i need to check if sound files are good quality.
 
 - **Time Calculation**:
-  - i use OCR (Optical Character Recognition) to read time from images. OCR is not perfect, sometimes it makes mistakes. If OCR reads time wrong, our calculations can be wrong too. It is important to see when OCR makes mistakes so i can fix them.
+  - i use OCR to read time from images. OCR is not perfect, sometimes it makes mistakes. If OCR reads time wrong, our calculations can be wrong too. It is important to see when OCR makes mistakes so i can fix them.
 
 - **Error Handling**:
   - i make sure to handle errors when data is not perfect. This includes catching mistakes in OCR time reading and checking if sound files are not loud enough. Fixing these errors helps us get more accurate results.
@@ -71,7 +71,7 @@ This represnts the moving average of the time differences happening in each and 
 - **Keeping Records**: i kept detailed logs and documentation during the project to make sure everything was clear and could be checked later.
 
 ## Acknowledgements
-- **Support**: Thanks to our project advisor and team members for their support and help, which are very important for finishing this project.
+- **Support**: Thanks to our project advisor Prof. Tyler colon for his support and help, which are very important for finishing this project.
 
 ## Future Work
 - **More Data**: if I could add more data sources like live traffic feeds to get a bigger picture of traffic patterns.
