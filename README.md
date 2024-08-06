@@ -6,8 +6,7 @@
 ## Objective
 Main goal of this project is to look at traffic data by working with log files. i calculate time differences and see the darection of movement. i also make pictures and charts to understand data better. i download and process images and sound files from server, and i add time on these images.
 
-## Important Points
-
+## contents 
 - **Sound Analysis**:
   - i compare how loud the sound is (in dBFS) with actual sound file loudness. This is important because if they don’t match, there might be a problem with the sound. i need to check if sound files are good quality.
 
@@ -34,10 +33,14 @@ Main goal of this project is to look at traffic data by working with log files. 
 5. **Making Visuals**:
    - i made different charts to show the data, like:
      - Bar charts for forward and backward movements.
+     
      - Line charts for time differences.
      - Histograms for how time differences are spread out.
      - Bar charts for events in 15-minute intervals.
-
+![Visualization for xxxxxx ](1.png)
+![Bar charts for forward and backward movements](2.png)
+![Bar charts for forward and backward movements](3.png)
+![Bar charts for forward and backward movements](4.png)
 ## Data Sources
 - **Log Files**: Main data came from log files stored in darectories. These files had detailed records of traffic events.
 - **Remote Server**: Extra data like images and sound files are downloaded from a remote server.
@@ -45,7 +48,7 @@ Main goal of this project is to look at traffic data by working with log files. 
 ## Results and What i Found
 - **Good Data Analysis**: i successfully processed log files to calculate time differences and see how traffic moved. The charts helped us understand traffic patterns.
 - **Effective Media Handling**: Images and sound files are downloaded and processed correctly. Sound files are checked for quality, and time stamps are added to images for further study.
-- **Flexible Setup**: The project is set up in a way that it can be easily updated and can handle new data sources or formats.
+- **Flexible Setup**: The project code easily is updated and can handle new data sources or formats.
 
 ## Additional Notes
 - **Tools i Used**: i used Python libraries like Pandas for data work, Matplotlib for making charts, Paramiko for downloading files securely, and PIL for working with images.
@@ -56,15 +59,15 @@ Main goal of this project is to look at traffic data by working with log files. 
 - **Support**: Thanks to our project advisor and team members for their support and help, which are very important for finishing this project.
 
 ## Future Work
-- **More Data**: In the future, i could add more data sources like live traffic feeds to get a bigger picture of traffic patterns.
-- **Advanced Analysis**: i could use machine learning to predict traffic trends and find problems before they happen.
-- **Real-Time Processing**: i could develop the ability to analyze and show data as it comes in, for quick insights.
-- **User Interface**: i could make an easy-to-use interface so others can see the data and charts more easily.
+- **More Data**: if I could add more data sources like live traffic feeds to get a bigger picture of traffic patterns.
+- **Advanced Analysis**: I could use machine learning for any work with extracted data.
+- **Real-Time Processing**: I could develop the ability to analyze and show data as it comes in, for quick insights.
+- **User Interface**: we could make an easy-to-use interface.
 
 ## Challenges and How i Solved Them
 - **Handling Large Data**: Traffic data can be very big, so i needed efficient ways to process it.
 - **Data Quality**: Sometimes data was not perfect, so i cleaned and validated it to make sure the results are accurate.
 - **Remote Access**: Downloading data from remote servers securely was noteasy, but i used SSH to do it safely.
 
-  
+
 
