@@ -38,15 +38,19 @@ Main goal of this project is to look at traffic data by working with log files. 
      - Histograms for how time differences are spread out.
      - Bar charts for events in 15-minute intervals.
 ![Visualization for](1.png)
- Forward and Backward count of vehicles with respective to saved date-time and date-time
+ Forward and Backward count of vehicles with respective to saved date-time and date-time,In this step, the log files containing traffic data are parsed to extract relevant records. Each log entry includes timestamps for events ('dto' and 'save_dto'). The time difference between these events is calculated, and the directionality of traffic movement (forward or backward) is determined.
 ![Bar charts for forward and backward movements](4.png)
-This is the histogram for number of time difference of vehicles passes in the particular day
+This is the histogram for number of time difference of vehicles passes in the particular day.In this step, the log files containing traffic data are parsed to extract relevant records. Each log entry includes timestamps for events ('dto' and 'save_dto'). The time difference between these events is calculated, and the directionality of traffic movement (forward or backward) is determined.
 ![Bar charts for forward and backward movements](3.png)
-It is number of entries happens in a day range for every 15 minutes which are less than 10sec
+It is number of entries happens in a day range for every 15 minutes which are less than 10sec.The data is grouped into 15-minute intervals, and the number of entries in each interval is counted. The resulting data is visualized using bar charts, highlighting the distribution and frequency of traffic data
+![Bar charts for forward and backward movements](35.jpg)
+Entries where the time difference is less than 10 seconds are filtered and saved to a new file. The corresponding images for these entries are then downloaded from the remote server. The script adds timestamp text to these images and saves them locally
 ![Bar charts for forward and backward movements](2.png)
-It is number of entries happens in a day range for every 15 minutes which are greater than 10sec
+It is number of entries happens in a day range for every 15 minutes which are greater than 10sec.This step involves merging log entries into 15-minute intervals and counting the number of entries within each interval. The grouped data is visualized using bar charts, providing a clear depiction of traffic data distribution over time. This visualization helps identify patterns, peak periods, and anomalies in the traffic data, facilitating a better understanding of traffic behaviors.
 ![Bar charts for forward and backward movements](5.png)
-This represnts the moving average of the time differences happening in each and evey day. these are calulated by grouping them in time diffences
+This represnts the moving average of the time differences happening in each and evey day. these are calulated by grouping them in time diffences.
+
+
 ## Data Sources
 - **Log Files**: Main data came from log files stored in darectories. These files had detailed records of traffic events.
 - **Remote Server**: Extra data like images and sound files are downloaded from a remote server.
@@ -55,7 +59,12 @@ This represnts the moving average of the time differences happening in each and 
 - **Good Data Analysis**: i successfully processed log files to calculate time differences and see how traffic moved. The charts helped us understand traffic patterns.
 - **Effective Media Handling**: Images and sound files are downloaded and processed correctly. Sound files are checked for quality, and time stamps are added to images for further study.
 - **Flexible Setup**: The project code easily is updated and can handle new data sources or formats.
+- 
+### Quality Assurance and Data Integrity
+- The scripts include mechanisms to handle and log errors, such as invalid JSON lines in log files or failed downloads from the remote server. Audio files are validated based on file size, duration, and average audio level.
 
+### Scalability and Flexibility
+- IF we could pass the same script through the same json format we can scale through large dataset and so that we can process the results
 ## Additional Notes
 - **Tools i Used**: i used Python libraries like Pandas for data work, Matplotlib for making charts, Paramiko for downloading files securely, and PIL for working with images.
 - **Secure Data Handling**: All data from the server was downloaded securely using SSH. i also had error handling in place to manage any problems with data quality or connections.
