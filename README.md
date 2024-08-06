@@ -37,10 +37,14 @@ Main goal of this project is to look at traffic data by working with log files. 
      - Line charts for time differences.
      - Histograms for how time differences are spread out.
      - Bar charts for events in 15-minute intervals.
-![Visualization for xxxxxx ](1.png)
-![Bar charts for forward and backward movements](2.png)
-![Bar charts for forward and backward movements](3.png)
+![Visualization for](1.png)
+ Forward and Backward count of vehicles with respective to saved date-time and date-time
 ![Bar charts for forward and backward movements](4.png)
+This is the histogram for number of time difference of vehicles passes in the particular day
+![Bar charts for forward and backward movements](3.png)
+It is number of entries happens in a day range for every 15 minutes which are less than 10sec
+![Bar charts for forward and backward movements](2.png)
+It is number of entries happens in a day range for every 15 minutes which are greater than 10sec
 ## Data Sources
 - **Log Files**: Main data came from log files stored in darectories. These files had detailed records of traffic events.
 - **Remote Server**: Extra data like images and sound files are downloaded from a remote server.
