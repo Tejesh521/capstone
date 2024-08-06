@@ -45,6 +45,8 @@ This is the histogram for number of time difference of vehicles passes in the pa
 It is number of entries happens in a day range for every 15 minutes which are less than 10sec
 ![Bar charts for forward and backward movements](2.png)
 It is number of entries happens in a day range for every 15 minutes which are greater than 10sec
+![Bar charts for forward and backward movements](5.png)
+This represnts the moving average of the time differences happening in each and evey day. these are calulated by grouping them in time diffences
 ## Data Sources
 - **Log Files**: Main data came from log files stored in darectories. These files had detailed records of traffic events.
 - **Remote Server**: Extra data like images and sound files are downloaded from a remote server.
