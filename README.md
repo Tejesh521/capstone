@@ -49,8 +49,10 @@ Entries where the time difference is less than 10 seconds are filtered and saved
 It is number of entries happens in a day range for every 15 minutes which are greater than 10sec.This step involves merging log entries into 15-minute intervals and counting the number of entries within each interval. The grouped data is visualized using bar charts, providing a clear depiction of traffic data distribution over time. This visualization helps identify patterns, peak periods, and anomalies in the traffic data, facilitating a better understanding of traffic behaviors.
 ![Bar charts for forward and backward movements](5.png)
 This represnts the moving average of the time differences happening in each and evey day. these are calulated by grouping them in time diffences.
-
-
+![Bar charts for forward and backward movements](6.png)
+plot with 24-hour coverage on the x-axis, where each bar represents the count for a specific 15-minute interval across all dates whose time diff is less than 10 sec.
+![Bar charts for forward and backward movements](7.png)
+plot with 24-hour coverage on the x-axis, where each bar represents the count for a specific 15-minute interval across all dates.whose time diff is greater than 10 sec.
 ## Data Sources
 - **Log Files**: Main data came from log files stored in darectories. These files had detailed records of traffic events.
 - **Remote Server**: Extra data like images and sound files are downloaded from a remote server.
